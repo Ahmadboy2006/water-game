@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+body{
+    background-image: url(./img/img/container-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.start-container{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid green;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/start-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.modal-start-container{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px;
+    background: rgba(199, 126, 126, 0.19);
+    backdrop-filter: blur(20.6px);
+    border-radius: 12px;
+}
+
+.s-btn{
+    width: 80%;
+    height: 60px;
+    border-radius: 45px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: monospace;
+    color: rgb(69, 64, 64);
+    background-color: rgb(68, 242, 68);
+}
+.container{
+    width: 100%;
+    height: 97vh;
+    display: none;    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.End-container{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.time-container{
+    width: 200px;
+    height: 60%;
+    border-radius: 15px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 10px;
+    background-color: #fff;
+}
+.clock{
+    font-size: 50px;
+    color: mediumslateblue;
+}
+.time-number{
+    margin-top: 15px;
+    font-size: 40px;
+    font-family: monospace;
+    display: flex;
+}
+.star-container{
+    width: 300px;
+    height: 60%;
+    border-radius: 15px;
+    background-color: rgb(55, 55, 55);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+}
+.star{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.min-container{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.group-letters{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+.group-dishes{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+.dish{
+    width: 12%;
+    height: 450px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius:25px;
+    display: flex;
+    align-items: end;
+    background: rgba(255, 251, 251, 0.19);
+    box-shadow: 0 4px 30px rgba(203, 203, 203, 0.1);
+    backdrop-filter: blur(10.6px);
+    overflow: hidden;
+}
+.mini-dish{
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-image: url("https://media.tenor.com/I3nNUFNSzNkAAAAC/waser-water.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -50px;
+    background-color: #4db6fc;
+}
+.rectangle{
+    width: 128px;
+    top: 300px;
+    position: absolute;
+    border: 3px solid black;
+    z-index: 10;
+}
+
+
+.end-container{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid green;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/end-image.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.modal-end-container{
+    width: 50%;
+    height: 90%;
+    padding: 80px;
+    border: 2px solid black;
+    background: rgba(199, 126, 126, 0.19);
+    backdrop-filter: blur(20.6px);
+    border-radius: 12px;
+}
+.star-end-container{
+    grid-area: star;
+    border: 1px solid black;
+}
+.time-end-container{
+    grid-area: time;
+    border: 1px solid black;
+}
+.statistics-end{
+    grid-area: statistics;
+    padding: 0 !important;
+}
+.stat-box{
+    height: 85%;
+    border: 1px solid black;
+}
+.stat-text{
+    height: 15%;
+    border: 1px solid black;
+}
+.animals-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+}
+.reload{
+    border-radius: 12px;
+    /* padding: 5px; */
+    background-color: aqua;
+    font-size: 35px;
+}
+
+.settings-container{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid green;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/start-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.log-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/reg-log-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.log-start{
+    display: flex;
+}
+.reg-box{
+    display: none;
+}
+.log-box{
+    display: none;
+}
+
+.success{
+    outline: 4px solid green !important;
+}
+.error{
+    outline: 4px solid crimson !important;
+}
+.level{
+    width: 300px;
+    height: 10px;
+    display: flex;
+    gap: 2px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.m-lvl{
+    width: 28px;
+    height: 100%;
+}
+
+/* .log-box{
+    transform-style: preserve-3d;
+    width: 40%;
+    height: 80%;
+    gap: 50px;
+    padding: 100px;
+    background: rgba(199, 126, 126, 0.19);
+    backdrop-filter: blur(20.6px);
+    border-radius: 12px;
+    transform: rotateY(180deg);
+}
+.log-log{
+    transform: rotateY(180deg);
+} */
+
+.animate{
+    animation: Ogoxlantirish 1s infinite linear;
+  }
+  @keyframes Ogoxlantirish{
+    from{
+  background: rgba(255, 0, 0, 0.418);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+    }
+    to{
+  background: rgba(255, 251, 251, 0.19);
+  box-shadow: 0 4px 30px rgba(203, 203, 203, 0.1);
+  backdrop-filter: blur(5.6px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+  }
